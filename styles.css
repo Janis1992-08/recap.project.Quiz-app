@@ -4,40 +4,46 @@
   font-family: Gotham Rounded;
 }
 
+.header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+  background-color: rgb(128, 30, 0);
+  z-index: 1;
+}
 
 body {
-  padding: 0;
+  padding-inline: 20px;
   margin: 0;
-  display: flex;
-  width: 100vw;
-  height: 200vh;
-  justify-content: flex-end;
-  align-items: center;
-  background-color: white;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  width: 600px;
-  height: 800px;
-  max-width: 80%;
-  background-color: white;
-  border-radius: 5px;
-  padding: 10px;
-  box-shadow: 0 0 10px 2px;
+  margin-top: 70px;
+
 }
 
-
 .container {
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 300px;
-  max-width: 80%;
-  background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px;
+  margin: 10px;
   box-shadow: 0 0 10px 2px;
-  align-items: center ;  
+  text-decoration: none;
+  position: relative;
+  left: 50%;
+  translate: -50%;
+}
+
+.question {
+  position: relative;
+  align-self: center;
+  top: 10px;
 }
 
 
@@ -48,9 +54,11 @@ main {
   padding: 5px 10px;
   color: white;
   outline: none;
-  width: 300px;
+  width: fit-content;
+  align-self: center;
+  margin: auto;
 }
 
 .btn:hover {
-  border-color: black;
+  background-color: green;
 }
