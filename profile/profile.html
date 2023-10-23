@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/profile/profile.css" rel="stylesheet" />
-    <script defer src="script.js"></script>
     <title>Quiz App</title>
   </head>
-  <body>
+  <body data-js="body">
+    <script src="/profile/profile.js" defer></script>
     <header>
       <h1>Quiz App</h1>
     </header>
 
     <main>
       <section class="gridMain">
-        <section class="pb">
-          <img src="" alt="Profile Picture" class="profilep" />
+        <section class="account">
+          <img src="/pictures/account.png" alt="Account Picture" class="accountp" />
           <p class="name">Janis Schiller</p>
         </section>
         <section class="aboutMe"><article class="container">
             <h3>About me</h3>
             <p>  </p>
             </article>
-          </article></section>
+          </article>
+        </section>
         <section class="counter">
             <p class="tag">⁉️:</p>
             <p class="tag">🔖: </p>
@@ -30,13 +32,13 @@
         <section class="darkMode">
             <p>Dark Mode</p>
             <label class="switch">
-                <input type="checkbox" aria-label="Dark Mode switch">
+                <input data-js="toggle-button" type="checkbox" aria-label="Dark Mode switch">
                 <span></span>	  
             </label>
           </section>
         </section>
         <nav class="navfooter">
-          <a href="/index/index.html" class="icon" aria-label="Link to Homepage"
+          <a href="/Index/index.html" class="icon" aria-label="Link to Homepage"
             >🏠</a>
           <a href="/bookmark/bookmark.html"
             class="icon"

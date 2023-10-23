@@ -22,7 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 80px;
-
+  margin-bottom: 80px;
 }
 
 .container {
@@ -39,11 +39,39 @@ main {
   translate: -50%;
 }
 
+.bookmark-container {
+  display: inline-block;
+}
+
+.bookmark {
+  position: absolute;
+  right: 0px;
+  font-size: 40px;
+  top: -45px;
+  
+}
+
 .question {
   position: relative;
   align-self: center;
   top: 10px;
   font-size: 20px;
+  
+}
+
+.hashtags {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  position: relative;
+  bottom: -20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: medium;
 }
 
 
